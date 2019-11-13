@@ -49,7 +49,10 @@ def total_gross(source)
   dir_names = list_of_directors(source)
   row_index = 0 
   while row_index < dir_names.length do 
-    dir_income_hash[dir_names[row_index]]
+    total += dir_income_hash[dir_names[row_index]]
+    row_index += 1 
+  end 
+  total
 end
 
 
