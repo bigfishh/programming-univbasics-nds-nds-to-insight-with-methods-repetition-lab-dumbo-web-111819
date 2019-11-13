@@ -44,7 +44,12 @@ def total_gross(source)
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
-  while directors_totals(source)
+  total = 0
+  dir_income_hash = directors_totals(source)
+  dir_names = list_of_directors(source)
+  row_index = 0 
+  while row_index < dir_income_hash.length do 
+    dir_income_hash[dir_names][row_index]
 end
 
 
